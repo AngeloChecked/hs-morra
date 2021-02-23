@@ -1,0 +1,42 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 48342e3985fbf66708d150426d989068b52d95a6eb0815c327878f3aa58e61ba
+
+name:           Morra
+version:        0.1.0.0
+build-type:     Simple
+
+library
+  exposed-modules:
+      Morra
+  other-modules:
+      Paths_Morra
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , hspec
+    , random
+    , transformers
+  default-language: Haskell2010
+
+test-suite Morra-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      MorraSpec
+      Paths_Morra
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Morra
+    , base >=4.7 && <5
+    , hspec
+    , random
+    , transformers
+  default-language: Haskell2010

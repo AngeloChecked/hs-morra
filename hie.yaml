@@ -1,0 +1,7 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "Morra:lib"
+
+    - path: "./test"
+      component: "Morra:test:Morra-test"
