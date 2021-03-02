@@ -1,3 +1,4 @@
 module Main where
-import Morra
-main = app
+
+import Morra2
+main = game 

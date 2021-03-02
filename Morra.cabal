@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 3bf137324428dd07a97c8e479f9a156ca3dc5db921a111cdc582baf36c667efd
+-- hash: f357204fe682bbf24ebd2490887b2e3921c0d017aaa2c7f4f12bdc8fc98f64e6
 
 name:           Morra
 version:        0.1.0.0
@@ -13,6 +13,8 @@ build-type:     Simple
 library
   exposed-modules:
       Morra
+      Morra2
+      Morra3
   other-modules:
       Paths_Morra
   hs-source-dirs:
@@ -20,6 +22,7 @@ library
   build-depends:
       base >=4.7 && <5
     , containers
+    , extra
     , hspec
     , random
     , transformers
@@ -36,6 +39,7 @@ executable Morra-exe
       Morra
     , base >=4.7 && <5
     , containers
+    , extra
     , hspec
     , random
     , transformers
@@ -54,6 +58,7 @@ test-suite Morra-test
       Morra
     , base >=4.7 && <5
     , containers
+    , extra
     , hspec
     , random
     , transformers

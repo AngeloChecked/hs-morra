@@ -3,5 +3,11 @@ cradle:
     - path: "./src"
       component: "Morra:lib"
 
+    - path: "./app/Main.hs"
+      component: "Morra:exe:Morra-exe"
+
+    - path: "./app/Paths_Morra.hs"
+      component: "Morra:exe:Morra-exe"
+
     - path: "./test"
       component: "Morra:test:Morra-test"
